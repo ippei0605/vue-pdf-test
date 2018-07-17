@@ -29,5 +29,8 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## 画面イメージ
+![画面イメージ](doc/sample.png)
+
 ## 感想
-PDF の表示のみで、コピペも検索もできません。
+PDF の表示はできますが、コピペも検索もできないようです。
