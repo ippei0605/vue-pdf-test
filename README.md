@@ -1,6 +1,7 @@
 # vue-pdf-test
 
-> vue-pdf Test
+## はじめに
+vue.js で PDF を表示するモジュール `vue-pdf` がありましたので、簡単な検証いたしました。
 
 ## Build Setup
 
@@ -36,3 +37,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * PDF の表示はできますが、ページ移動などプログラムによる制御が必要です。
 * コピペや検索はできないようです。
 * 簡単な検証 (0.5d) のつもりだったので CSS を手組みましたが、とても面倒です。やはり Bootstrap や Element-UI を組込むべきでした。
+
+## 参考
+* https://www.npmjs.com/package/vue-pdf
+* https://jp.vuejs.org/v2/guide/forms.html#%E9%81%B8%E6%8A%9E
