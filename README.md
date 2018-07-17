@@ -1,7 +1,7 @@
 # vue-pdf-test
 
 ## はじめに
-vue.js で PDF を表示するモジュール `vue-pdf` がありましたので、簡単な検証をしました。
+Vue.js で PDF を表示するモジュール `vue-pdf` がありましたので、簡単な検証をしました。
 
 ## Build Setup
 
