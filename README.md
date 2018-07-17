@@ -35,3 +35,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## 感想
 * PDF の表示はできますが、ページ移動などプログラムによる制御が必要です。
 * コピペや検索はできないようです。
+* 簡単な検証 (0.5d) のつもりだったので CSS を手組みましたが、とても面倒です。やはり Bootstrap や Element-UI を組込むべきでした。

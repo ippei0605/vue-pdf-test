@@ -1,15 +1,19 @@
 <template>
   <div class="Pdf">
-    <h1>vue-pdf Test</h1>
-    <select v-model="selected" class="pdf-selector">
-      <option v-for="(option, index) in options" :value="option.value" :key="index">
-        {{ option.text }}
-      </option>
-    </select>
+    <div>
+      <h1><img src="@/assets/logo.png" class="logo">vue-pdf Test</h1>
+      <select v-model="selected" class="pdf-selector">
+        <option v-for="(option, index) in options" :value="option.value" :key="index">
+          {{ option.text }}
+        </option>
+      </select>
+    </div>
     <pdf :src="selected"
          :page="currentPage"
          @num-pages="pageCount = $event"
-         @page-loaded="currentPage = $event"></pdf>
+         @page-loaded="currentPage = $event"
+         class="pdf"></pdf>
+    <hr>
     <div class="page">
       <a href="javascript:void(0)" class="previous-page"
          @click="currentPage > 1 ? currentPage--: currentPage = 1">前ページ</a>
@@ -47,10 +51,18 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
   .pdf-selector {
     float: right;
     font-size: 16px;
-    margin-top: -60px;
+    margin-top: -40px;
+    margin-bottom: 0;
     height: 35px;
     width: 600px;
   }
@@ -62,19 +74,22 @@
 
   .previous-page {
     float: left;
+    margin-left: 20px;
   }
 
   .next-page {
     float: right;
+    margin-right: 20px;
   }
 
   h1, h2 {
     font-weight: normal;
+    margin: 0;
   }
 
   ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px 0;
   }
 
   li {
