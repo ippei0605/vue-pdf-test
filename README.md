@@ -33,6 +33,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## 画面イメージ
 ![画面イメージ](doc/sample.png)
 
+    > 上部のセレクトボックスで 2つの PDF を切り替えることができます。
+    > 下部のリンク (前ページ, 次ページ) でページを移動することができます。
+
 ## 感想
 * PDF の表示はできますが、ページ移動などプログラムによる制御が必要です。
 * コピペや検索はできないようです。
